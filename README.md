@@ -1,6 +1,7 @@
 # Pretty-dir
-
+![LICENSE-BADGE]
  > __Pretty-dir__ or __pdir__ is a pretty print function for the dir() command.
+
  - It checks the size of the screen to shows a better output of dir.
 As the command `ls` in Linux.
  - It uses colors to diference `public` `privated` `protected`
@@ -88,3 +89,4 @@ Please let me know in twitter in [@im_tavo].
 <!--Links-->
 [@im_tavo]: twitter.com/im_tavo
 [issues]: https://github.com/Athesto/pretty-pdir/issues
+[LICENSE-BADGE]: https://img.shields.io/github/license/athesto/pretty-pdir?color=red
