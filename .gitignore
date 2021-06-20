@@ -1,0 +1,5 @@
+dist
+.tags
+*.swp
+__pycache__
+*.egg-info
