@@ -76,10 +76,10 @@ except:
 - Or you think that you need something more (a feature)
 - Or there is something else
 
-Please open an issue and tell me your idea.
+Please open an [issue][issues] and tell me your idea.
 
 ## Licence
-GPLv3
+[GPLv3](LICENSE)
 
 ## Author
 Hi, I'm Gustavo Mejía and if it's works to you.
@@ -87,3 +87,4 @@ Please let me know in twitter in [@im_tavo].
 
 <!--Links-->
 [@im_tavo]: twitter.com/im_tavo
+[issues]: https://github.com/Athesto/pretty-pdir/issues
