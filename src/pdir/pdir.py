@@ -16,7 +16,7 @@ def pdir(data=None, opt=""):
         pdir(data, [opt])
 
     ARGS:
-        @data: is any list
+        @data: is any object
         @opt: it could be None, 'public', 'privated', 'dunder'/'magic'
             or 'protected'. it set a blue color for dunder function and
             a light blue for protected function
