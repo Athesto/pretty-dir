@@ -34,7 +34,7 @@ def pdir(data=None, opt=""):
 
     re_public = r"^[^_].*"
     re_protec = r"^[_][^_].*"
-    re_dunder = r"^[_][_].*[_][_]$"
+    re_dunder = r"^[_][_].*[_][_]$|_"
     re_privat = r"^[_][_].*[^_][^_]$"
 
     list_dir = dir(data)
