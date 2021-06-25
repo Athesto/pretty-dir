@@ -48,6 +48,9 @@ def pdir(data=None, opt=""):
     b = (public + protected + private + dunder)
     if len(a) != len(b):
         print("regex error")
+        print(a)
+        print(b)
+        print(list(set(a) - set(b)))
         return
 
     public = ["\033[{}m{}\033[m".format(00, x) for x in public]
