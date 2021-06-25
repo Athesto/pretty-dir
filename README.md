@@ -90,3 +90,4 @@ Please let me know in twitter in [@im_tavo].
 [@im_tavo]: twitter.com/im_tavo
 [issues]: https://github.com/Athesto/pretty-pdir/issues
 [LICENSE-BADGE]: https://img.shields.io/github/license/athesto/pretty-pdir?color=red
+[wikipedia]: https://wikipedia.org
