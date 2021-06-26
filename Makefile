@@ -19,3 +19,6 @@ install-test:
 
 install-main:
 	pip install --upgrade -I $(PKG_NAME)
+
+install-local:
+	pip3 install -I ./dist/$(PKG_NAME)-*.tar.gz --user
