@@ -19,30 +19,11 @@ Import the command and use the syntax
         pdir(<data>)
         pdir(<data>, <str>)
 ```
-where `<str>` must be `"public"` or `"protected"` or
+where `<data>` is any object and `<str>` must be `"public"` or `"protected"` or
 `"private"` or `"magic"` or `"dunder"`
 
 ### Example
-```python
->>> from pdir import pdir
->>> pdir(list)
-__add__           __gt__             __new__           clear
-__class__         __hash__           __reduce__        copy
-__contains__      __iadd__           __reduce_ex__     count
-__delattr__       __imul__           __repr__          extend
-__delitem__       __init__           __reversed__      index
-__dir__           __init_subclass__  __rmul__          insert
-__doc__           __iter__           __setattr__       pop
-__eq__            __le__             __setitem__       remove
-__format__        __len__            __sizeof__        reverse
-__ge__            __lt__             __str__           sort
-__getattribute__  __mul__            __subclasshook__
-__getitem__       __ne__             append
->>>
->>> pdir(list, "public")
-append  copy   extend  insert  remove   sort
-clear   count  index   pop     reverse
-```
+![pdir vs dir][image_pdir]
 
 ## Use the manual
 
@@ -91,3 +72,4 @@ Please let me know in twitter in [@im_tavo].
 [issues]: https://github.com/Athesto/pretty-pdir/issues
 [LICENSE-BADGE]: https://img.shields.io/github/license/athesto/pretty-pdir?color=red
 [wikipedia]: https://wikipedia.org
+[image_pdir]: assets/pdir_vs_dir_2.png
