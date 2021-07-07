@@ -72,4 +72,4 @@ Please let me know in twitter in [@im_tavo].
 [issues]: https://github.com/Athesto/pretty-pdir/issues
 [LICENSE-BADGE]: https://img.shields.io/github/license/athesto/pretty-pdir?color=red
 [wikipedia]: https://wikipedia.org
-[image_pdir]: assets/pdir_vs_dir_2.png
+[image_pdir]: https://github.com/Athesto/pretty-dir/raw/main/assets/pdir_vs_dir_2.png
