@@ -1,5 +1,9 @@
 # Changelog
 ## Unrelease
+### Fixed
+change images in the README with absolute link
+
+## [0.0.6] - 2021-06-26
 ### Added
 Include the CHANGELOG.md
 
@@ -12,5 +16,6 @@ First initial version
 
 <!--Links-->
 [0.0.5]:https://github.com/Athesto/pretty-dir/releases/tag/v0.0.5
+[0.0.6]:https://github.com/Athesto/pretty-dir/releases/tag/v0.0.6
 
 
