@@ -1,7 +1,10 @@
 # Changelog
 ## Unrelease
+
+## [0.0.7] - 2021-08-03
 ### Fixed
 change images in the README with absolute link
+the `ppdir(json)` has problems and the list filling is now O(n)
 
 ## [0.0.6] - 2021-06-26
 ### Added
