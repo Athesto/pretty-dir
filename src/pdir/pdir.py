@@ -73,5 +73,6 @@ def pdir(data=None, opt=""):
         return
 
     rows, columns = os.popen('stty size', 'r').read().split()
-    columns = int(columns) - 2
-    Cmd().columnize(out, displaywidth=columns)
+    columns = int(columns)
+    terminal = Cmd()
+    terminal.columnize(out, displaywidth=i)
