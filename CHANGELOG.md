@@ -1,5 +1,8 @@
 # Changelog
 ## Unrelease
+## [0.0.7.1] - 2021-08-03
+### hotfix
+hotfix columnize
 
 ## [0.0.7] - 2021-08-03
 ### Fixed
