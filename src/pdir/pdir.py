@@ -44,13 +44,14 @@ def pdir(data=None, opt=""):
         [x for x in list_dir if match(re_protec, x)], \
         [x for x in list_dir if match(re_dunder, x)]
 
-    a = (list_dir)
-    b = (public + protected + private + dunder)
+    a = list_dir
+    b = public + protected + private + dunder
     if len(a) != len(b):
         print("regex error")
-        print(a)
-        print(b)
-        print(list(set(a) - set(b)))
+        print(sorted(a))
+        print(sorted(b))
+        print("len a: ", len(a))
+        print("len b: ", len(b))
         return
 
     public = ["\033[{}m{}\033[m".format(00, x) for x in public]
