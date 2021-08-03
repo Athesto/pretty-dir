@@ -37,20 +37,30 @@ def pdir(data=None, opt=""):
     re_dunder = r"^[_][_].*[_][_]$|_"
     re_privat = r"^[_][_].*[^_][^_]$"
 
-    list_dir = dir(data)
-    public, private, protected, dunder = \
-        [x for x in list_dir if match(re_public, x)], \
-        [x for x in list_dir if match(re_privat, x)], \
-        [x for x in list_dir if match(re_protec, x)], \
-        [x for x in list_dir if match(re_dunder, x)]
+    public, private, protected, dunder, other = ([] for _ in range(5))
 
-    a = (list_dir)
-    b = (public + protected + private + dunder)
+    list_dir = dir(data)
+    for element in list_dir:
+        if (match(re_public, element)):
+            public.append(element)
+        elif (match(re_privat, element)):
+            private.append(element)
+        elif (match(re_protec, element)):
+            protected.append(element)
+        elif (match(re_dunder, element)):
+            dunder.append(element)
+        else:
+            other.append(element)
+
+    a = list_dir
+    b = public + protected + private + dunder
     if len(a) != len(b):
         print("regex error")
-        print(a)
-        print(b)
-        print(list(set(a) - set(b)))
+        print(sorted(a))
+        print(sorted(b))
+        print(other)
+        print("len a: ", len(a))
+        print("len b: ", len(b))
         return
 
     public = ["\033[{}m{}\033[m".format(00, x) for x in public]
@@ -73,5 +83,6 @@ def pdir(data=None, opt=""):
         return
 
     rows, columns = os.popen('stty size', 'r').read().split()
-    columns = int(columns) - 2
-    Cmd().columnize(out, displaywidth=columns)
+    columns = int(columns)
+    terminal = Cmd()
+    terminal.columnize(out, displaywidth=columns)
