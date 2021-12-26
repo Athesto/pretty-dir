@@ -25,7 +25,7 @@ def pdir(data=None, opt=""):
         It will print the dir command as ls in the shell
     '''
 
-    if not data:
+    if data is None:
         print("welcome to pdir, please use this syntax pdir(data, [opt])")
         return
 

@@ -1,5 +1,10 @@
 # Changelog
 ## Unrelease
+
+## [0.0.7.2] - 2021-12-46
+### Fixed
+The pandas has problem with pdir and changing the if statement it fixed it
+
 ## [0.0.7.1] - 2021-08-03
 ### hotfix
 hotfix columnize
